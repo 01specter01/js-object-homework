@@ -43,8 +43,10 @@ console.log(isEmptyObject());
 console.log("------------Aufgabe 2.4-------------");
 
 function countLetters(str) {
-    return str.split("");
+    var count = {};
+    str.split("").forEach(function (s) {
+        count[s] ? count[s]++ : (count[s] = 1);
+    });
+    return count;
 }
 console.log(countLetters("tree"));
-
-//  {t: 1, r: 1, e: 2}

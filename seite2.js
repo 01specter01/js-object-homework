@@ -50,3 +50,24 @@ function countLetters(str) {
     return count;
 }
 console.log(countLetters("tree"));
+
+console.log("------------Aufgabe 2.5-------------");
+
+function freeShipping(obj) {
+    const firstValue = obj[Object.keys(obj)[0]];
+    return firstValue;
+    const secondValue = obj[Object.keys(obj)[1]];
+    return secondValue;
+    const thirdValue = obj[Object.keys(obj)[2]];
+    return thirdValue;
+    const fouthValue = obj[Object.keys(obj)[3]];
+    return fouthValue;
+    let sum = `${firstValue} + ${secondValue} +${thirdValue} +${fouthValue} `;
+    console.log(sum);
+}
+
+console.log(freeShipping());
+
+freeShipping({ Sponge: 3.5, Soap: 5.99 }); //➞ false
+//freeShipping({ "Surround Sound Equipment": 499.99 }); //➞ true
+//freeShipping({ Wool: 13.99, "Knitting Needles": 15.5, Bag: 13.99 }); //➞ false

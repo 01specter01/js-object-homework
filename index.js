@@ -96,6 +96,7 @@ console.log(changeKeyValue({ apple: "pinklady", banana: "chikita" }));
 console.log("------------Aufgabe 8-------------");
 
 function eight() {
-    return Object.values(person);
+    console.log(Object.values(person));
+    console.log(Object.keys(person));
 }
-console.log(eight());
+eight();

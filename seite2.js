@@ -32,3 +32,19 @@ function calcMaxScrabbleScore() {
 }
 
 console.log(calcMaxScrabbleScore(scrabbleHand));
+
+console.log("------------Aufgabe 2.3-------------");
+const obj = { name: "Mat", age: 50 };
+function isEmptyObject() {
+    return Object.keys(obj).length === 0;
+}
+console.log(isEmptyObject());
+
+console.log("------------Aufgabe 2.4-------------");
+
+function countLetters(str) {
+    return str.split("");
+}
+console.log(countLetters("tree"));
+
+//  {t: 1, r: 1, e: 2}

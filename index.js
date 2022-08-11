@@ -74,6 +74,20 @@ let first = { firstName: "John" };
 let last = { lastName: "Smith" };
 
 function combineArr() {
-    console.log(`${first.firstName.push() && last.lastName.push()}`);
+    let merged = { ...first, ...last };
+    return merged;
 }
-combineArr();
+console.log(combineArr());
+console.log("If values are same, it still works");
+console.log(
+    "No because we only copy values, because we wanna keep original data in tackt, makes more sence"
+);
+
+console.log("------------Aufgabe 7-------------");
+
+function changeKeyValue(obj) {
+    const swapped = Object.entries(obj).map(([key, value]) => [value, key]);
+
+    return Object.fromEntries(swapped);
+}
+console.log(changeKeyValue({ apple: "pinklady", banana: "chikita" }));

@@ -63,10 +63,10 @@ let student = {
     class: "4A",
     course: "English",
 };
-function array() {
-    console.log(Object.values(student));
+function array(student) {
+    console.log(Object.keys(student));
 }
-array();
+array(student);
 
 console.log("------------Aufgabe 6-------------");
 
@@ -82,6 +82,7 @@ console.log("If values are same, it still works");
 console.log(
     "No because we only copy values, because we wanna keep original data in tackt, makes more sence"
 );
+first;
 
 console.log("------------Aufgabe 7-------------");
 
@@ -91,3 +92,10 @@ function changeKeyValue(obj) {
     return Object.fromEntries(swapped);
 }
 console.log(changeKeyValue({ apple: "pinklady", banana: "chikita" }));
+
+console.log("------------Aufgabe 8-------------");
+
+function eight() {
+    return Object.values(person);
+}
+console.log(eight());
